@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "User",
+      "created_at": true,
+      "updated_at": true,
+      "fields": [
+        {
+          "name": "name",
+          "type": "varchar",
+          "nullable": false,
+          "isIndex": false,
+          "isUnique": true
+        },
+        {
+          "name": "email",
+          "type": "varchar",
+          "nullable": false,
+          "isIndex": true,
+          "isUnique": true
+        }
+      ],
+      "indexes": [
+        {
+          "fields": [
+            "email"
+          ],
+          "unique": true
+        }
+      ],
+      "uniques": []
+    }
+  ],
+  "relationships": [],
+  "_removedEntities": []
+}
